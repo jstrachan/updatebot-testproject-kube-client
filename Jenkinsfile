@@ -3,9 +3,10 @@ node {
         git 'https://github.com/jstrachan/updatebot-testproject-kube-client.git'
 
     }
-    updateBotPush()
 
     stage('UpdateBot') {
+        updateBotPush()
+
         // now lets make pull requests on downstream projects
         echo "hello"
     }
